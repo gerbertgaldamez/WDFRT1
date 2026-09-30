@@ -1,0 +1,293 @@
+/* ------------------------------
+   CONFIGURACIÓN GENERAL
+-------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6f8;
+    color: #172033;
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* ------------------------------
+   ENCABEZADO
+-------------------------------- */
+
+.hero {
+    background-color: #080e1d;
+    color: white;
+    padding: 45px 0 35px;
+}
+
+.terminal {
+    color: #f5a623;
+    font-family: monospace;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.05;
+    margin: 0 0 20px;
+}
+
+.descripcion {
+    color: #c8ceda;
+    max-width: 650px;
+    font-size: 15px;
+}
+
+.ubicacion {
+    color: #8993a5;
+    font-size: 13px;
+}
+
+
+/* ------------------------------
+   BOTONES
+-------------------------------- */
+
+.botones {
+    display: flex;
+    gap: 10px;
+    margin: 22px 0;
+}
+
+.boton {
+    padding: 9px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.principal {
+    background-color: #f5a623;
+    color: #111827;
+}
+
+.secundario {
+    color: white;
+    border: 1px solid #394154;
+}
+
+.boton:hover {
+    opacity: 0.8;
+}
+
+
+/* ------------------------------
+   REDES
+-------------------------------- */
+
+.redes {
+    display: flex;
+    gap: 18px;
+    font-size: 13px;
+}
+
+.redes a {
+    color: #8f99aa;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: white;
+}
+
+
+/* ------------------------------
+   SOBRE MI
+-------------------------------- */
+
+.sobre-mi {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.foto {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.sobre-mi h2,
+.seccion h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.sobre-mi p {
+    font-size: 13px;
+    color: #596273;
+    margin: 5px 0 10px;
+}
+
+
+/* ------------------------------
+   HABILIDADES
+-------------------------------- */
+
+.seccion {
+    padding-bottom: 35px;
+}
+
+.habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.habilidad h3 {
+    font-size: 10px;
+    color: #596273;
+    border-bottom: 2px solid #39b7ad;
+    padding-bottom: 8px;
+}
+
+.habilidad:nth-child(2) h3 {
+    border-color: #39b7ad;
+}
+
+.habilidad:nth-child(3) h3 {
+    border-color: #48c78e;
+}
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.etiquetas span {
+    background-color: white;
+    border: 1px solid #dce0e6;
+    padding: 4px 7px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #4e5766;
+}
+
+
+/* ------------------------------
+   PROYECTOS
+-------------------------------- */
+
+.titulo-proyectos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-proyectos p {
+    color: #737b89;
+    font-size: 11px;
+}
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.proyecto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    border-top: 3px solid;
+    min-height: 160px;
+}
+
+.proyecto h3 {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.proyecto p {
+    font-size: 11px;
+    color: #697281;
+}
+
+.proyecto a {
+    font-size: 11px;
+    color: #1b6d80;
+    text-decoration: none;
+}
+
+.proyecto-verde {
+    border-color: #39b7ad;
+}
+
+.proyecto-naranja {
+    border-color: #f5a623;
+}
+
+.proyecto-azul {
+    border-color: #26354d;
+}
+
+
+/* ------------------------------
+   FOOTER
+-------------------------------- */
+
+footer {
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: #080e1d;
+    color: #8f99aa;
+    font-size: 12px;
+}
+
+
+/* ------------------------------
+   DISEÑO PARA CELULAR
+-------------------------------- */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 35px 0;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .sobre-mi {
+        grid-template-columns: 1fr;
+    }
+
+    .habilidades {
+        grid-template-columns: 1fr;
+    }
+
+    .proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-proyectos {
+        display: block;
+    }
+
+    .redes {
+        flex-wrap: wrap;
+    }
+
+}

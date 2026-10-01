@@ -124,6 +124,7 @@ body {
     height: 100px;
     object-fit: cover;
     border-radius: 5px;
+	margin-left: -80px;
 }
 
 .sobre-mi h2,
